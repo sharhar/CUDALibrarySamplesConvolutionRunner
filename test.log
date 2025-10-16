@@ -1,427 +1,427 @@
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=64
+Iteration 1 | fft_size=64
 =============================
 FFT size: 64
 FFTs run: 2099328
 
 cuFFTDx
-Avg Time [ms_n]: 2.67009
-Time (all) [ms_n]: 26.7009
-Performance [GFLOPS]: 1509.58
+Avg Time [ms_n]: 2.66476
+Time (all) [ms_n]: 26.6476
+Performance [GFLOPS]: 1512.6
 FFTs elements per thread: 8
 FFTs per block: 16
 CUDA blocks: 131208
 Blocks per multiprocessor: 11
 
 cuFFT
-Avg Time [ms_n]: 8.01257
-Time (all) [ms_n]: 80.1257
-Performance [GFLOPS]: 503.048
+Avg Time [ms_n]: 8.05037
+Time (all) [ms_n]: 80.5037
+Performance [GFLOPS]: 500.686
 
 
-Iteration 2: setting fft_size=64
+Iteration 2 | fft_size=64
 =============================
 FFT size: 64
 FFTs run: 2099328
 
 cuFFTDx
-Avg Time [ms_n]: 2.66762
-Time (all) [ms_n]: 26.6762
-Performance [GFLOPS]: 1510.98
+Avg Time [ms_n]: 2.66938
+Time (all) [ms_n]: 26.6938
+Performance [GFLOPS]: 1509.98
 FFTs elements per thread: 8
 FFTs per block: 16
 CUDA blocks: 131208
 Blocks per multiprocessor: 11
 
 cuFFT
-Avg Time [ms_n]: 7.98187
-Time (all) [ms_n]: 79.8187
-Performance [GFLOPS]: 504.983
+Avg Time [ms_n]: 7.9702
+Time (all) [ms_n]: 79.702
+Performance [GFLOPS]: 505.723
 
 
-Iteration 3: setting fft_size=64
+Iteration 3 | fft_size=64
 =============================
 FFT size: 64
 FFTs run: 2099328
 
 cuFFTDx
-Avg Time [ms_n]: 2.67067
-Time (all) [ms_n]: 26.7067
-Performance [GFLOPS]: 1509.25
+Avg Time [ms_n]: 2.676
+Time (all) [ms_n]: 26.76
+Performance [GFLOPS]: 1506.24
 FFTs elements per thread: 8
 FFTs per block: 16
 CUDA blocks: 131208
 Blocks per multiprocessor: 11
 
 cuFFT
-Avg Time [ms_n]: 7.97993
-Time (all) [ms_n]: 79.7993
-Performance [GFLOPS]: 505.106
+Avg Time [ms_n]: 7.9788
+Time (all) [ms_n]: 79.788
+Performance [GFLOPS]: 505.177
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=128
+Iteration 1 | fft_size=128
 =============================
 FFT size: 128
 FFTs run: 1049664
 
 cuFFTDx
-Avg Time [ms_n]: 2.67878
-Time (all) [ms_n]: 26.7878
-Performance [GFLOPS]: 1755.46
+Avg Time [ms_n]: 2.68493
+Time (all) [ms_n]: 26.8493
+Performance [GFLOPS]: 1751.44
 FFTs elements per thread: 16
 FFTs per block: 16
 CUDA blocks: 65604
 Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.98925
-Time (all) [ms_n]: 79.8925
-Performance [GFLOPS]: 588.603
+Avg Time [ms_n]: 7.95126
+Time (all) [ms_n]: 79.5126
+Performance [GFLOPS]: 591.415
 
 
-Iteration 2: setting fft_size=128
+Iteration 2 | fft_size=128
 =============================
 FFT size: 128
 FFTs run: 1049664
 
 cuFFTDx
-Avg Time [ms_n]: 2.68278
-Time (all) [ms_n]: 26.8278
-Performance [GFLOPS]: 1752.85
+Avg Time [ms_n]: 2.68104
+Time (all) [ms_n]: 26.8104
+Performance [GFLOPS]: 1753.98
 FFTs elements per thread: 16
 FFTs per block: 16
 CUDA blocks: 65604
 Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.95699
-Time (all) [ms_n]: 79.5699
-Performance [GFLOPS]: 590.989
+Avg Time [ms_n]: 7.94737
+Time (all) [ms_n]: 79.4737
+Performance [GFLOPS]: 591.705
 
 
-Iteration 3: setting fft_size=128
+Iteration 3 | fft_size=128
 =============================
 FFT size: 128
 FFTs run: 1049664
-
-cuFFTDx
-Avg Time [ms_n]: 2.6848
-Time (all) [ms_n]: 26.848
-Performance [GFLOPS]: 1751.53
-FFTs elements per thread: 16
-FFTs per block: 16
-CUDA blocks: 65604
-Blocks per multiprocessor: 7
-
-cuFFT
-Avg Time [ms_n]: 7.93702
-Time (all) [ms_n]: 79.3702
-Performance [GFLOPS]: 592.476
-Replaced line 228 in ../convolution_performance.cu
-
-
-Iteration 1: setting fft_size=256
-=============================
-FFT size: 256
-FFTs run: 524832
-
-cuFFTDx
-Avg Time [ms_n]: 2.68523
-Time (all) [ms_n]: 26.8523
-Performance [GFLOPS]: 2001.42
-FFTs elements per thread: 16
-FFTs per block: 4
-CUDA blocks: 131208
-Blocks per multiprocessor: 12
-
-cuFFT
-Avg Time [ms_n]: 7.96017
-Time (all) [ms_n]: 79.6017
-Performance [GFLOPS]: 675.147
-
-
-Iteration 2: setting fft_size=256
-=============================
-FFT size: 256
-FFTs run: 524832
 
 cuFFTDx
 Avg Time [ms_n]: 2.68196
 Time (all) [ms_n]: 26.8196
-Performance [GFLOPS]: 2003.86
+Performance [GFLOPS]: 1753.38
 FFTs elements per thread: 16
-FFTs per block: 4
-CUDA blocks: 131208
-Blocks per multiprocessor: 12
+FFTs per block: 16
+CUDA blocks: 65604
+Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.94972
-Time (all) [ms_n]: 79.4972
-Performance [GFLOPS]: 676.034
+Avg Time [ms_n]: 7.95685
+Time (all) [ms_n]: 79.5685
+Performance [GFLOPS]: 590.999
+Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 3: setting fft_size=256
+Iteration 1 | fft_size=256
 =============================
 FFT size: 256
 FFTs run: 524832
 
 cuFFTDx
-Avg Time [ms_n]: 2.70293
-Time (all) [ms_n]: 27.0293
-Performance [GFLOPS]: 1988.32
+Avg Time [ms_n]: 2.69002
+Time (all) [ms_n]: 26.9002
+Performance [GFLOPS]: 1997.86
 FFTs elements per thread: 16
 FFTs per block: 4
 CUDA blocks: 131208
 Blocks per multiprocessor: 12
 
 cuFFT
-Avg Time [ms_n]: 8.00153
-Time (all) [ms_n]: 80.0153
-Performance [GFLOPS]: 671.657
+Avg Time [ms_n]: 8.0002
+Time (all) [ms_n]: 80.002
+Performance [GFLOPS]: 671.768
+
+
+Iteration 2 | fft_size=256
+=============================
+FFT size: 256
+FFTs run: 524832
+
+cuFFTDx
+Avg Time [ms_n]: 2.68442
+Time (all) [ms_n]: 26.8442
+Performance [GFLOPS]: 2002.03
+FFTs elements per thread: 16
+FFTs per block: 4
+CUDA blocks: 131208
+Blocks per multiprocessor: 12
+
+cuFFT
+Avg Time [ms_n]: 7.9573
+Time (all) [ms_n]: 79.573
+Performance [GFLOPS]: 675.39
+
+
+Iteration 3 | fft_size=256
+=============================
+FFT size: 256
+FFTs run: 524832
+
+cuFFTDx
+Avg Time [ms_n]: 2.70124
+Time (all) [ms_n]: 27.0124
+Performance [GFLOPS]: 1989.56
+FFTs elements per thread: 16
+FFTs per block: 4
+CUDA blocks: 131208
+Blocks per multiprocessor: 12
+
+cuFFT
+Avg Time [ms_n]: 7.97744
+Time (all) [ms_n]: 79.7744
+Performance [GFLOPS]: 673.685
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=512
+Iteration 1 | fft_size=512
 =============================
 FFT size: 512
 FFTs run: 264120
 
 cuFFTDx
-Avg Time [ms_n]: 2.7477
-Time (all) [ms_n]: 27.477
-Performance [GFLOPS]: 2214.7
+Avg Time [ms_n]: 2.72475
+Time (all) [ms_n]: 27.2475
+Performance [GFLOPS]: 2233.36
 FFTs elements per thread: 8
 FFTs per block: 2
 CUDA blocks: 132060
 Blocks per multiprocessor: 10
 
 cuFFT
-Avg Time [ms_n]: 8.04533
-Time (all) [ms_n]: 80.4533
-Performance [GFLOPS]: 756.38
+Avg Time [ms_n]: 8.07616
+Time (all) [ms_n]: 80.7616
+Performance [GFLOPS]: 753.492
 
 
-Iteration 2: setting fft_size=512
+Iteration 2 | fft_size=512
 =============================
 FFT size: 512
 FFTs run: 264120
 
 cuFFTDx
-Avg Time [ms_n]: 2.75443
-Time (all) [ms_n]: 27.5443
-Performance [GFLOPS]: 2209.29
+Avg Time [ms_n]: 2.7518
+Time (all) [ms_n]: 27.518
+Performance [GFLOPS]: 2211.4
 FFTs elements per thread: 8
 FFTs per block: 2
 CUDA blocks: 132060
 Blocks per multiprocessor: 10
 
 cuFFT
-Avg Time [ms_n]: 7.98923
-Time (all) [ms_n]: 79.8923
-Performance [GFLOPS]: 761.691
+Avg Time [ms_n]: 7.97324
+Time (all) [ms_n]: 79.7324
+Performance [GFLOPS]: 763.219
 
 
-Iteration 3: setting fft_size=512
+Iteration 3 | fft_size=512
 =============================
 FFT size: 512
 FFTs run: 264120
 
 cuFFTDx
-Avg Time [ms_n]: 2.65822
-Time (all) [ms_n]: 26.5822
-Performance [GFLOPS]: 2289.24
+Avg Time [ms_n]: 2.71419
+Time (all) [ms_n]: 27.1419
+Performance [GFLOPS]: 2242.04
 FFTs elements per thread: 8
 FFTs per block: 2
 CUDA blocks: 132060
 Blocks per multiprocessor: 10
 
 cuFFT
-Avg Time [ms_n]: 7.99867
-Time (all) [ms_n]: 79.9867
-Performance [GFLOPS]: 760.792
+Avg Time [ms_n]: 8.01175
+Time (all) [ms_n]: 80.1175
+Performance [GFLOPS]: 759.55
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=1024
+Iteration 1 | fft_size=1024
 =============================
 FFT size: 1024
 FFTs run: 131208
 
 cuFFTDx
-Avg Time [ms_n]: 2.67712
-Time (all) [ms_n]: 26.7712
-Performance [GFLOPS]: 2509.36
+Avg Time [ms_n]: 2.7092
+Time (all) [ms_n]: 27.092
+Performance [GFLOPS]: 2479.64
 FFTs elements per thread: 32
 FFTs per block: 4
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 7.93746
-Time (all) [ms_n]: 79.3746
-Performance [GFLOPS]: 846.348
+Avg Time [ms_n]: 7.96302
+Time (all) [ms_n]: 79.6302
+Performance [GFLOPS]: 843.631
 
 
-Iteration 2: setting fft_size=1024
+Iteration 2 | fft_size=1024
 =============================
 FFT size: 1024
 FFTs run: 131208
 
 cuFFTDx
-Avg Time [ms_n]: 2.68768
-Time (all) [ms_n]: 26.8768
-Performance [GFLOPS]: 2499.5
+Avg Time [ms_n]: 2.68083
+Time (all) [ms_n]: 26.8083
+Performance [GFLOPS]: 2505.88
 FFTs elements per thread: 32
 FFTs per block: 4
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 7.90539
-Time (all) [ms_n]: 79.0539
-Performance [GFLOPS]: 849.781
+Avg Time [ms_n]: 7.92598
+Time (all) [ms_n]: 79.2598
+Performance [GFLOPS]: 847.573
 
 
-Iteration 3: setting fft_size=1024
+Iteration 3 | fft_size=1024
 =============================
 FFT size: 1024
 FFTs run: 131208
 
 cuFFTDx
-Avg Time [ms_n]: 2.72671
-Time (all) [ms_n]: 27.2671
-Performance [GFLOPS]: 2463.72
+Avg Time [ms_n]: 2.68154
+Time (all) [ms_n]: 26.8154
+Performance [GFLOPS]: 2505.22
 FFTs elements per thread: 32
 FFTs per block: 4
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 7.93652
-Time (all) [ms_n]: 79.3652
-Performance [GFLOPS]: 846.447
+Avg Time [ms_n]: 7.9199
+Time (all) [ms_n]: 79.199
+Performance [GFLOPS]: 848.224
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=2048
+Iteration 1 | fft_size=2048
 =============================
 FFT size: 2048
 FFTs run: 65604
 
 cuFFTDx
-Avg Time [ms_n]: 2.72538
-Time (all) [ms_n]: 27.2538
-Performance [GFLOPS]: 2711.42
+Avg Time [ms_n]: 2.6754
+Time (all) [ms_n]: 26.754
+Performance [GFLOPS]: 2762.06
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 65604
 Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.98492
-Time (all) [ms_n]: 79.8492
-Performance [GFLOPS]: 925.449
+Avg Time [ms_n]: 7.99372
+Time (all) [ms_n]: 79.9372
+Performance [GFLOPS]: 924.429
 
 
-Iteration 2: setting fft_size=2048
+Iteration 2 | fft_size=2048
 =============================
 FFT size: 2048
 FFTs run: 65604
 
 cuFFTDx
-Avg Time [ms_n]: 2.72292
-Time (all) [ms_n]: 27.2292
-Performance [GFLOPS]: 2713.87
+Avg Time [ms_n]: 2.67308
+Time (all) [ms_n]: 26.7308
+Performance [GFLOPS]: 2764.47
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 65604
 Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.97123
-Time (all) [ms_n]: 79.7123
-Performance [GFLOPS]: 927.039
+Avg Time [ms_n]: 7.97409
+Time (all) [ms_n]: 79.7409
+Performance [GFLOPS]: 926.705
 
 
-Iteration 3: setting fft_size=2048
+Iteration 3 | fft_size=2048
 =============================
 FFT size: 2048
 FFTs run: 65604
 
 cuFFTDx
-Avg Time [ms_n]: 2.69003
-Time (all) [ms_n]: 26.9003
-Performance [GFLOPS]: 2747.05
+Avg Time [ms_n]: 2.68452
+Time (all) [ms_n]: 26.8452
+Performance [GFLOPS]: 2752.69
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 65604
 Blocks per multiprocessor: 7
 
 cuFFT
-Avg Time [ms_n]: 7.97716
-Time (all) [ms_n]: 79.7716
-Performance [GFLOPS]: 926.349
+Avg Time [ms_n]: 7.97796
+Time (all) [ms_n]: 79.7796
+Performance [GFLOPS]: 926.256
 Replaced line 228 in ../convolution_performance.cu
 
 
-Iteration 1: setting fft_size=4096
+Iteration 1 | fft_size=4096
 =============================
 FFT size: 4096
 FFTs run: 32802
 
 cuFFTDx
-Avg Time [ms_n]: 2.71032
-Time (all) [ms_n]: 27.1032
-Performance [GFLOPS]: 2974.35
+Avg Time [ms_n]: 2.7093
+Time (all) [ms_n]: 27.093
+Performance [GFLOPS]: 2975.46
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 7.96365
-Time (all) [ms_n]: 79.6365
-Performance [GFLOPS]: 1012.28
+Avg Time [ms_n]: 8.01198
+Time (all) [ms_n]: 80.1198
+Performance [GFLOPS]: 1006.17
 
 
-Iteration 2: setting fft_size=4096
+Iteration 2 | fft_size=4096
 =============================
 FFT size: 4096
 FFTs run: 32802
 
 cuFFTDx
-Avg Time [ms_n]: 2.67366
-Time (all) [ms_n]: 26.7366
-Performance [GFLOPS]: 3015.12
+Avg Time [ms_n]: 2.67879
+Time (all) [ms_n]: 26.7879
+Performance [GFLOPS]: 3009.35
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 8.04762
-Time (all) [ms_n]: 80.4762
-Performance [GFLOPS]: 1001.72
+Avg Time [ms_n]: 7.9785
+Time (all) [ms_n]: 79.785
+Performance [GFLOPS]: 1010.39
 
 
-Iteration 3: setting fft_size=4096
+Iteration 3 | fft_size=4096
 =============================
 FFT size: 4096
 FFTs run: 32802
 
 cuFFTDx
-Avg Time [ms_n]: 2.68298
-Time (all) [ms_n]: 26.8298
-Performance [GFLOPS]: 3004.65
+Avg Time [ms_n]: 2.71777
+Time (all) [ms_n]: 27.1777
+Performance [GFLOPS]: 2966.19
 FFTs elements per thread: 16
 FFTs per block: 1
 CUDA blocks: 32802
 Blocks per multiprocessor: 3
 
 cuFFT
-Avg Time [ms_n]: 7.96652
-Time (all) [ms_n]: 79.6652
-Performance [GFLOPS]: 1011.91
+Avg Time [ms_n]: 7.98423
+Time (all) [ms_n]: 79.8423
+Performance [GFLOPS]: 1009.67

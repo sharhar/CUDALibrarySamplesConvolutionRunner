@@ -44,7 +44,7 @@ repeat="$2"
 for ((i=1; i<=repeat; i++)); do
   echo ""
   echo ""
-  echo "Iteration $i: setting fft_size=$1"
+  echo "Iteration $i | fft_size=$1"
   echo "============================="
   ./a.out
 done
