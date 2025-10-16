@@ -43,12 +43,14 @@ with open(filename, 'r') as f:
             #print("CufftDx time: ", cufftdx_time)
             #print("Cufft time: ", cufft_time)
 
-run_str = "".join([f"Run {i+1} (GB/s)," for i in range(max_iter_count)])
+run_str = "".join([f"Run {i+1} (ms)," for i in range(max_iter_count)])
 
 fft_sizes = [64, 128, 256, 512, 1024, 2048, 4096]
 
 cufft_header = "Backend,FFT Size," + run_str + "Mean,Std Dev\n"
 cufftdx_header = "Backend,FFT Size," + run_str + "Mean,Std Dev\n"
+
+ratios_header = "Backend,FFT Size,Ratio\n"
 
 for fft_size in fft_sizes:
     cufft_iterations = []
@@ -71,8 +73,15 @@ for fft_size in fft_sizes:
     cufft_header += f"cufft,{fft_size}," + cufft_data_str + f",{cufft_mean:.2f},{cufft_std:.2f}\n"
     cufftdx_header += f"cufftdx,{fft_size}," + cufftdx_data_str + f",{cufftdx_mean:.2f},{cufftdx_std:.2f}\n"
 
-with open('cufft_results.csv', 'w') as f:
+    ratio = cufft_mean / cufftdx_mean
+    ratios_header += f"nvidia,{fft_size},{ratio:.2f}\n"
+
+with open('conv_cufft.csv', 'w') as f:
     f.write(cufft_header)
 
-with open('cufftdx_results.csv', 'w') as f:
+with open('conv_cufftdx.csv', 'w') as f:
     f.write(cufftdx_header)
+
+with open('ratios_nvidia.csv', 'w') as f:
+    f.write(ratios_header)
+

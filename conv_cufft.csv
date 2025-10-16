@@ -1,4 +1,4 @@
-Backend,FFT Size,Run 1 (GB/s),Run 2 (GB/s),Run 3 (GB/s),Mean,Std Dev
+Backend,FFT Size,Run 1 (ms),Run 2 (ms),Run 3 (ms),Mean,Std Dev
 cufft,64,80.50,79.70,79.79,80.00,0.36
 cufft,128,79.51,79.47,79.57,79.52,0.04
 cufft,256,80.00,79.57,79.77,79.78,0.18

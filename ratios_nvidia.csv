@@ -1,0 +1,8 @@
+Backend,FFT Size,Ratio
+nvidia,64,3.00
+nvidia,128,2.96
+nvidia,256,2.96
+nvidia,512,2.94
+nvidia,1024,2.95
+nvidia,2048,2.98
+nvidia,4096,2.96
