@@ -50,7 +50,7 @@ fft_sizes = [64, 128, 256, 512, 1024, 2048, 4096]
 cufft_header = "Backend,FFT Size," + run_str + "Mean,Std Dev\n"
 cufftdx_header = "Backend,FFT Size," + run_str + "Mean,Std Dev\n"
 
-ratios_header = "Backend,FFT Size,Ratio\n"
+ratios_header = "Backend,FFT Size,Ratio,Std Dev\n"
 
 for fft_size in fft_sizes:
     cufft_iterations = []
@@ -67,14 +67,17 @@ for fft_size in fft_sizes:
     cufftdx_mean = np.mean(cufftdx_iterations)
     cufftdx_std = np.std(cufftdx_iterations)
 
-    cufft_data_str = ",".join([f"{x:.2f}" for x in cufft_iterations])
-    cufftdx_data_str = ",".join([f"{x:.2f}" for x in cufftdx_iterations])
+    cufft_data_str = ",".join([f"{x:.4f}" for x in cufft_iterations])
+    cufftdx_data_str = ",".join([f"{x:.4f}" for x in cufftdx_iterations])
 
-    cufft_header += f"cufft,{fft_size}," + cufft_data_str + f",{cufft_mean:.2f},{cufft_std:.2f}\n"
-    cufftdx_header += f"cufftdx,{fft_size}," + cufftdx_data_str + f",{cufftdx_mean:.2f},{cufftdx_std:.2f}\n"
+    cufft_header += f"cufft,{fft_size}," + cufft_data_str + f",{cufft_mean:.4f},{cufft_std:.4f}\n"
+    cufftdx_header += f"cufftdx,{fft_size}," + cufftdx_data_str + f",{cufftdx_mean:.4f},{cufftdx_std:.4f}\n"
 
     ratio = cufft_mean / cufftdx_mean
-    ratios_header += f"nvidia,{fft_size},{ratio:.2f}\n"
+
+    ratio_std = ratio * np.sqrt( (cufft_std / cufft_mean)**2 + (cufftdx_std / cufftdx_mean)**2 )
+
+    ratios_header += f"nvidia,{fft_size},{ratio:.4f},{ratio_std:.4f}\n"
 
 with open('conv_cufft.csv', 'w') as f:
     f.write(cufft_header)
