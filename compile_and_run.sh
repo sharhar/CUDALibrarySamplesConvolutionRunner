@@ -34,6 +34,8 @@ echo "Replaced line $line_no in $file"
 $NVCC -std=c++17 -O3 \
     -I /home/shaharsandhaus/cutlass/include \
     -I /home/shaharsandhaus/nvidia-mathdx-25.06.1/nvidia/mathdx/25.06/include \
+    -DCUFFTDX_EXAMPLE_ENABLE_SM_86 \
+    -DCUFFTDX_EXAMPLE_CMAKE \
     -gencode arch=compute_86,code=sm_86 \
     -lcufft \
     ../convolution_performance.cu
